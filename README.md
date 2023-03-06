@@ -22,6 +22,7 @@ NODE TİPİ | CPU     | RAM      | SSD     |
 
 - Aşağıdaki komutu çalıştırın. 
 - Validator için bir ad belirleyin ve kurulumun tamamlanmasını bekleyin.
+ ![andromeda-1](https://user-images.githubusercontent.com/111747226/223242085-09fc964b-0dc5-4628-932f-6c1aefaf0b1a.png)
 ```
 wget -q -O andromeda.sh https://raw.githubusercontent.com/CoinHuntersTR/Andromeda-Testnet-Rehberi/main/andromeda.sh && chmod +x andromeda.sh && sudo /bin/bash andromeda.sh
 ```
@@ -36,6 +37,8 @@ source $HOME/.bash_profile
 ```
 andromedad keys add cüzdanadi
 ```
+- Sizden bir şifre oluşturmanızı isteyecek gireceğiniz şifreyi unutmayın bir yere not edin. Aynı şifreyi iki kere girdiğinizde aşağıdaki gibi cüzdan adresi ve kelimeleri alabilrisiniz.
+![andromeda-2](https://user-images.githubusercontent.com/111747226/223243262-a2931fab-0091-46d9-a4b5-e0a6f15c9d26.png)
 - Cüzdan kelimelerinizi ve cüzdan adresini bir yere kayıt etmeyi unutmayın.
 
 # 3) Validator Kurulumu
