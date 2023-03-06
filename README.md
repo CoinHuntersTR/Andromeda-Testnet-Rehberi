@@ -84,4 +84,4 @@ andromedad tx staking create-validator \
 --yes
 ```
  ![validator-kurulumu](https://user-images.githubusercontent.com/111747226/223251105-5716eb9f-6cb3-46a5-9610-f9f4ef1fe14c.png)
- -Cüzdanı açarken girmiş olduğunuz şifreyi sizden isteyecek burada onu giriyoruz ve ENTER tuşuna basıyoruz. İşlem tamamdır.
+ - Cüzdanı açarken girmiş olduğunuz şifreyi sizden isteyecek burada onu giriyoruz ve ENTER tuşuna basıyoruz. İşlem tamamdır.
