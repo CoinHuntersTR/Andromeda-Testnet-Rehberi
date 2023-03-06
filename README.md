@@ -64,6 +64,8 @@ journalctl -u andromedad -f -o cat
 ``` 
 
 ### Validator Kurulumu;
+ ![andromeda-4](https://user-images.githubusercontent.com/111747226/223249218-357e36c8-8367-4daf-a540-ff0de09b1361.png)
+ -Bu şekilde FALSE aldığınızda validator kurulumuna geçebilirsiniz.
  - cüzdanadi yazan yere, oluşturduğunuz cüzdan adını ekleyin. Website linkleri kısmını mutlaka değiştirin. Kendi twitter veya telegram adreslerinizi verebilirsiniz.
 ```
 andromedad tx staking create-validator \
