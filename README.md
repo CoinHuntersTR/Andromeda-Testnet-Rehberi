@@ -47,7 +47,7 @@ andromedad keys add cüzdanadi
  ![andromeda-3](https://user-images.githubusercontent.com/111747226/223243839-89a58c62-6150-4b5e-886b-408b2d26a7bc.png)
   
 ```
-curl -s localhost:26657/status | jq .result.sync_info.catching_up
+andromedad status 2>&1 | jq .SyncInfo
 ```
 ### Log Kontrolü
   
