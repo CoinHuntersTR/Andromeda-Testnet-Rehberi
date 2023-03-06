@@ -51,7 +51,15 @@ curl -s localhost:26657/status | jq .result.sync_info.catching_up
 journalctl -u andromedad -f -o cat
 ``` 
 
+ ### Faucet
+ - Discorda kanalında #faucet-pub kanalına gidiyoruz. aşağdaki kod şeklinde test tokeni talep ediyoruz.
+  
+```
+!request cüzdanadresi
+``` 
+
 ### Validator Kurulumu;
+ - cüzdanadi yazan yere, oluşturduğunuz cüzdan adını ekleyin. Website linkleri kısmını mutlaka değiştirin. Kendi twitter veya telegram adreslerinizi verebilirsiniz.
 ```
 andromedad tx staking create-validator \
 --moniker="$VALIDATOR" \
