@@ -54,7 +54,8 @@ curl -s localhost:26657/status | jq .result.sync_info.catching_up
 ```
 journalctl -u andromedad -f -o cat
 ``` 
-
+- Bu şekilde blok kayıtları akıyorsa sıkıntı yok demektir.
+![blok-kayitlari](https://user-images.githubusercontent.com/111747226/223246515-30f69bc4-75fc-4993-b105-067c06a50a1c.png)
  ### Faucet
  - Discorda kanalında #faucet-pub kanalına gidiyoruz. aşağdaki kod şeklinde test tokeni talep ediyoruz.
   
