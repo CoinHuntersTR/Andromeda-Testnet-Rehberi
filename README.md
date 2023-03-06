@@ -43,7 +43,8 @@ andromedad keys add cüzdanadi
 
 # 3) Validator Kurulumu
   
-- Ağın sekronize olması bitene kadar bekliyoruz. False sonucunu görene kadar bekle. 
+- Ağın sekronize olması bitene kadar bekliyoruz. False sonucunu görene kadar bekle. Aşağıdaki şekilde true aldığın sürece bekliyorsun!
+ ![andromeda-3](https://user-images.githubusercontent.com/111747226/223243839-89a58c62-6150-4b5e-886b-408b2d26a7bc.png)
   
 ```
 curl -s localhost:26657/status | jq .result.sync_info.catching_up
