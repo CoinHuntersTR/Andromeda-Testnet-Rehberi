@@ -8,14 +8,7 @@
 NODE TİPİ | CPU     | RAM      | SSD     |
 | ------------- | ------------- | ------------- | -------- |
 | Ubuntu 20.04 |4          | 8         | 200  |
-  
-  
-  
-# Sphinx (Betanet) ağını metamask'e eklemek için: https://docs.shardeum.org/network/endpoints
-  
-  <img width="1440" alt="Ekran Resmi 2023-02-02 19 47 45" src="https://user-images.githubusercontent.com/101462877/216388297-d9b47afc-c5e6-4245-9bd9-1171a05fa77d.png">
-
-  
+ 
 
 ## Andromeda için önemli linkler:
 - <a href="https://andromedaprotocol.io/" target="_blank">Website</a>
@@ -37,7 +30,7 @@ wget -q -O andromeda.sh https://raw.githubusercontent.com/CoinHuntersTR/Andromed
 source $HOME/.bash_profile
 ```
 
-# 2) Cüzdan Kurulumu ve Validatorü çalıştırma
+# 2) Cüzdan Kurulumu
 
 - cüzdanadi yerine istediğiniz bir ismi girin.
 ```
@@ -45,4 +38,33 @@ andromedad keys add cüzdanadi
 ```
 - Cüzdan kelimelerinizi ve cüzdan adresini bir yere kayıt etmeyi unutmayın.
 
+# 3) Validator Kurulumu
+  
+- Ağın sekronize olması bitene kadar bekliyoruz. False sonucunu görene kadar bekle. 
+  
+```
+curl -s localhost:26657/status | jq .result.sync_info.catching_up
+```
+### Log Kontrolü
+  
+```
+journalctl -u andromedad -f -o cat
+``` 
 
+### Validator Kurulumu;
+```
+andromedad tx staking create-validator \
+--moniker="$VALIDATOR" \
+--website="https://coinhunterstr.com/" \
+--details="https://linktr.ee/coinhunters" \
+--amount=1000000uandr \
+--fees 300uandr \
+--pubkey=$(andromedad tendermint show-validator) \
+--chain-id=$CHAIN_ID \
+--commission-max-change-rate=0.01 \
+--commission-max-rate=0.20 \
+--commission-rate=0.10 \
+--min-self-delegation=1 \
+--from=cüzdanadi \
+--yes
+```
